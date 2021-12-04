@@ -7,3 +7,13 @@
 .title {
   font-weight: 700;
 }
+
+.mi-cuenta {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #2a1846;
+}
