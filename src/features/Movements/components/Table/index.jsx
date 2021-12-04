@@ -21,8 +21,14 @@ const Table = (props) => {
                 .replace(/([/])/g, '-')}
             </h4>
             <h4 className="table-description">{element.info}</h4>
-            <h4 className="table-amount">
-              {element.debit > 0 ? element.debit : element.credit}
+            <h4
+              className={
+                element.debit > 0
+                  ? 'table-amount-positive'
+                  : 'table-amount-negative'
+              }
+            >
+              {element.debit > 0 ? `+${element.debit}` : `-${element.credit}`}
             </h4>
           </div>
         ))

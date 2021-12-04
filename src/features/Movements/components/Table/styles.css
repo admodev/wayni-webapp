@@ -32,7 +32,7 @@
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-  transform: translate(10px, 8px);
+  transform: translate(10px, -2px);
   color: #ffffff;
 }
 
@@ -52,4 +52,78 @@
   order: 1;
   flex-grow: 0;
   margin: 0px 0px;
+}
+
+.table-date {
+  width: 72px;
+  height: 20px;
+  left: 12px;
+  top: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #2a1846;
+  flex: none;
+  order: 0;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.table-description {
+  width: 168px;
+  height: 40px;
+  left: 92px;
+  top: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #2a1846;
+  flex: none;
+  order: 1;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.table-amount-positive {
+  width: 80px;
+  height: 20px;
+  left: 268px;
+  top: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  color: #00a067;
+  flex: none;
+  order: 2;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.table-amount-negative {
+  width: 80px;
+  height: 20px;
+  left: 268px;
+  top: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  color: #f96440;
+  flex: none;
+  order: 2;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 0px 8px;
 }
