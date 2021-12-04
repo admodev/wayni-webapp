@@ -3,8 +3,10 @@
   flex-direction: column;
   align-items: center;
   padding: 24px;
+  padding-top: 12px;
+  padding-bottom: 5px;
   position: static;
-  width: 336px;
+  width: 90%;
   left: calc(50% - 336px / 2);
   top: calc(50% - 153px / 2 - 235px);
   background: #ffffff;
@@ -18,7 +20,7 @@
   margin: 24px 0px;
 }
 
-.detail-span {
+.detail-saldo {
   font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -44,7 +46,7 @@
 }
 
 .detail-divider {
-  width: 288px;
+  width: inherit;
   height: 0px;
   border: 1px solid #d1d1d7;
 }
