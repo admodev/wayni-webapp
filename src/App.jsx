@@ -8,8 +8,8 @@ import Movements from './features/Movements';
 const App = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<Home />} exact />
-      <Route path="/movements" element={<Movements />} />
+      <Route path="/" element={<Movements />} exact />
+      <Route path="/home" element={<Home />} />
     </Routes>
   </Router>
 );

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // Components
 import ButtonRow from './components/ButtonRow';
 import Detail from './components/Detail';
+import TabBar from './components/TabBar';
 import Table from './components/Table';
 
 // Stylesheet
@@ -59,6 +60,7 @@ const Movements = () => {
           />
           <ButtonRow />
           <Table movements={detailData.result.activity.result} />
+          <TabBar />
         </>
       ) : (
         <div>
