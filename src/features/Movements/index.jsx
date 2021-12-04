@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // Components
 import ButtonRow from './components/ButtonRow';
 import Detail from './components/Detail';
+import Table from './components/Table';
 
 // Stylesheet
 import './styles.css';
@@ -49,18 +50,21 @@ const Movements = () => {
     <div className="container">
       <h2 className="mi-cuenta">Mi Cuenta</h2>
       {detailData.result ? (
-        <Detail
-          detailNumber={formatter
-            .format(detailData.result.balance.result.total)
-            .toString()}
-          cvu={`CVU: ${detailData.result.bankInfo.result.cvu}`}
-        />
+        <>
+          <Detail
+            detailNumber={formatter
+              .format(detailData.result.balance.result.total)
+              .toString()}
+            cvu={`CVU: ${detailData.result.bankInfo.result.cvu}`}
+          />
+          <ButtonRow />
+          <Table movements={detailData.result.activity.result} />
+        </>
       ) : (
         <div>
           {errorThrown ? <h2>{errorMessage}</h2> : <div className="spinner" />}
         </div>
       )}
-      <ButtonRow />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 # Wayni Movil
 
-## Webapp desarrollada en React
+## Webapp mobile-first desarrollada en React
 
 ### Version Control:
 
