@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // Components
+import ButtonRow from './components/ButtonRow';
 import Detail from './components/Detail';
 
 // Stylesheet
@@ -47,7 +48,7 @@ const Movements = () => {
   return (
     <div className="container">
       <h2 className="mi-cuenta">Mi Cuenta</h2>
-      {detailData ? (
+      {detailData.result ? (
         <Detail
           detailNumber={formatter
             .format(detailData.result.balance.result.total)
@@ -59,6 +60,7 @@ const Movements = () => {
           {errorThrown ? <h2>{errorMessage}</h2> : <div className="spinner" />}
         </div>
       )}
+      <ButtonRow />
     </div>
   );
 };
